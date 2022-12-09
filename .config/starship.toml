@@ -1,0 +1,19 @@
+[directory]
+style = "blue bold"
+
+[package]
+disabled = true
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[aws]
+disabled = true
+
+[docker_context]
+disabled = true
+
+
