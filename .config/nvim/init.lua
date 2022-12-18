@@ -2,6 +2,8 @@ require('billychen.base')
 require('billychen.highlights')
 require('billychen.maps')
 require('billychen.plugins')
+require('billychen.utils')
+require('impatient')
 
 local has = vim.fn.has
 local is_mac = has "macunix"

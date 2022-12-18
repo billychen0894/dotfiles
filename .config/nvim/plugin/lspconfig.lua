@@ -104,11 +104,25 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
-nvim_lsp.html.setup {
-  on_attach = on_attach,
-  filetypes = { "html", "handlebars", "hbs" },
-  capabilities = capabilities
-}
+-- nvim_lsp.html.setup {
+--   on_attach = on_attach,
+--   filetypes = { "html", "handlebars", "hbs" },
+--   capabilities = capabilities
+-- }
+
+nvim_lsp.emmet_ls.setup({
+  -- on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+  init_options = {
+    html = {
+      options = {
+        -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+        ["bem.enabled"] = true,
+      },
+    },
+  }
+})
 nvim_lsp.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities

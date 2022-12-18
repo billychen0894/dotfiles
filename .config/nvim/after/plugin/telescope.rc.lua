@@ -11,6 +11,9 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 
 telescope.setup {
   defaults = {
+    prompt_prefix = " ",
+    selection_caret = " ",
+    -- entry_prefix = "  ",
     mappings = {
       n = {
         ["q"] = actions.close

@@ -83,6 +83,8 @@ local mappings = {
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  ["g"] = { name = "Git", g = { "<cmd>LazyGit<CR>", "LazyGit" },
+    l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" } },
 }
 
 which_key.setup(setup)
